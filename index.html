@@ -2,8 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Head. Recipes landing page with hamburger navigation and SEO optimization">
+    <meta name="keywords" content="Head. Recipes, responsive design, hamburger menu, landing page, HTML, CSS">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Responsive Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<body>
+    <header>
+        <div class="container header-container">
+
+            <div class="container logo-container">
+                <h1 class="logo">Head.</h1>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container title-container">
+                <h1 class="hero-title">Recipes</h1>
+            </div>
+
+            <div class="container hero-container">
+                <p class="hero-text">
+                    Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                    Donec viverra eleifend lacus, vitae ullamcor.
+                </p>
+            </div>
+        </section>
+
+        <section class="image">
+                <img class="img" src="Images/recipes-img.jpg" alt="Pumpkin soup in a bowl with a spoon on the side">
+            </section>
+        </main>
+
+        <script> 
+            function myFunction() { 
+                const navLinks = document.querySelector(".nav-links");
+                navLinks.classList.toggle("show");
+            }
+        </script>
+
+    </body>
+</html>
